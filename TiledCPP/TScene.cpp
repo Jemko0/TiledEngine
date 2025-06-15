@@ -48,6 +48,8 @@ bool TScene::RegisterObject(TObject* o)
 	{
 		return false;
 	}
+
+    o->SetScene(*this);
 	m_Objects.push_back(o);
 
 	return true;
