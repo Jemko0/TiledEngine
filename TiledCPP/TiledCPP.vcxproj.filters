@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{ff1b4128-e542-4631-846d-2e97e72ee3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Core">
+      <UniqueIdentifier>{1e9dce4e-5def-40cb-8ad4-c1623ed2991b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{7106d446-f84c-4a74-a3cf-c77a8c8c90b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Core">
+      <UniqueIdentifier>{8053fdaf-ac6a-4ac4-b199-857e26b8a72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\ECS">
+      <UniqueIdentifier>{e759491f-9a1e-4b2a-84f8-c5d3639d237e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Resources">
+      <UniqueIdentifier>{572e0284-0256-4622-b217-dc23226db15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\CoreTObject">
+      <UniqueIdentifier>{d0250ccb-a584-4aa0-90a8-06c2e59e1c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Core\CoreTObject">
+      <UniqueIdentifier>{67592ef2-e25d-40dd-8187-753245c27327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\World">
+      <UniqueIdentifier>{8641df4b-9007-4671-b4a1-92e7b3002595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Tilemap">
+      <UniqueIdentifier>{95c13a2b-dd40-4732-b384-00f3bab88113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Tilemap\Structs">
+      <UniqueIdentifier>{2680a762-f337-44eb-bd03-ec101c1934e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Datatypes">
+      <UniqueIdentifier>{056d16b5-8231-49c2-a698-5ba07d53a7fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Rendering">
+      <UniqueIdentifier>{957b6935-5765-41c0-ac9b-df0157b56b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Rendering\Interface">
+      <UniqueIdentifier>{a85f8e6d-3af0-4ac4-988a-b2eeeda309af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\ECS">
+      <UniqueIdentifier>{046416d6-a359-4262-9164-99ba6935603d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\AssetManager">
+      <UniqueIdentifier>{fd7b8057-8795-47c8-8d19-ee15d62355e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\AssetManager">
+      <UniqueIdentifier>{675d42a7-3b41-4589-8e6e-cf30af7a09d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Objects">
+      <UniqueIdentifier>{185aec69-9736-43d6-82c8-3d8453294055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Objects">
+      <UniqueIdentifier>{17f6547e-1a63-4908-8615-7392b65c6fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Objects\Entity">
+      <UniqueIdentifier>{951431b1-8d7d-4dab-ad93-8cf3c2a3032b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Tilemap\Lookup">
+      <UniqueIdentifier>{cfe1813c-59d6-424b-ab8b-09c38a9f03d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Objects\Entity">
+      <UniqueIdentifier>{ec7adb42-4caf-40d0-ad4e-ce321c347b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Objects\Entity\Character">
+      <UniqueIdentifier>{5df544e6-3b88-4509-a4c8-b67d7ba92580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Objects\Entity\Character">
+      <UniqueIdentifier>{0ee1baca-6506-4527-a56e-d45f2f92784f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\ECS\MovementComponent">
+      <UniqueIdentifier>{9e4b1f4b-eab2-40b8-9020-a71d74e59354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\ECS\MovementComponent">
+      <UniqueIdentifier>{2f71708a-9d34-4ad8-a8f3-704593c41c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Objects\Controller">
+      <UniqueIdentifier>{4f18df27-be70-48b0-b762-2b8bf4583995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Input">
+      <UniqueIdentifier>{84864b5f-bc33-4c3f-a383-d84d750acf86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Tilemap">
+      <UniqueIdentifier>{b3517214-d4ae-4606-9ff9-7555f6944e24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\World">
+      <UniqueIdentifier>{029c6cfe-2d52-44d5-b6a5-c8f09fdb5301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Input">
+      <UniqueIdentifier>{a490ecf2-466b-475a-9346-126dd3395b79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TObject.cpp">
+      <Filter>Source Files\Engine\Core\CoreTObject</Filter>
+    </ClCompile>
+    <ClCompile Include="TScene.cpp">
+      <Filter>Source Files\Engine\World</Filter>
+    </ClCompile>
+    <ClCompile Include="TTileMap.cpp">
+      <Filter>Source Files\Engine\Tilemap</Filter>
+    </ClCompile>
+    <ClCompile Include="TWorld.cpp">
+      <Filter>Source Files\Engine\World</Filter>
+    </ClCompile>
+    <ClCompile Include="TSpriteRenderComponent.cpp">
+      <Filter>Source Files\Engine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="TObjectBase.cpp">
+      <Filter>Source Files\Engine\Core\CoreTObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>Source Files\Engine\AssetManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TPlaceable.cpp">
+      <Filter>Source Files\Engine\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TTileColliderComponent.cpp">
+      <Filter>Source Files\Engine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="TileLookup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TTransformComponent.cpp">
+      <Filter>Source Files\Engine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="TComponent.cpp">
+      <Filter>Source Files\Engine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="TEntity.cpp">
+      <Filter>Source Files\Engine\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="TCharacter.cpp">
+      <Filter>Source Files\Engine\Objects\Entity\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="TMovementComponent.cpp">
+      <Filter>Source Files\Engine\ECS\MovementComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="TCharacterMovementComponent.cpp">
+      <Filter>Source Files\Engine\ECS\MovementComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Engine\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Mappings.cpp">
+      <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="API.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\Engine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="TObjectBase.h">
+      <Filter>Header Files\Engine\CoreTObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TObject.h">
+      <Filter>Header Files\Engine\CoreTObject</Filter>
+    </ClInclude>
+    <ClInclude Include="TComponent.h">
+      <Filter>Header Files\Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="TScene.h">
+      <Filter>Header Files\Engine\World</Filter>
+    </ClInclude>
+    <ClInclude Include="TWorld.h">
+      <Filter>Header Files\Engine\World</Filter>
+    </ClInclude>
+    <ClInclude Include="TTileMap.h">
+      <Filter>Header Files\Engine\Tilemap</Filter>
+    </ClInclude>
+    <ClInclude Include="FTile.h">
+      <Filter>Header Files\Engine\Tilemap\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes.h">
+      <Filter>Header Files\Engine\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderableAsset.h">
+      <Filter>Header Files\Engine\Rendering\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="TSpriteRendererComponent.h">
+      <Filter>Header Files\Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="TTransformComponent.h">
+      <Filter>Header Files\Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>Header Files\Engine\AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TPlaceable.h">
+      <Filter>Header Files\Engine\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TEntity.h">
+      <Filter>Header Files\Engine\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="TTileColliderComponent.h">
+      <Filter>Header Files\Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="TileLookup.h">
+      <Filter>Header Files\Engine\Tilemap\Lookup</Filter>
+    </ClInclude>
+    <ClInclude Include="TCharacter.h">
+      <Filter>Header Files\Engine\Objects\Entity\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="TMovementComponent.h">
+      <Filter>Header Files\Engine\ECS\MovementComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="TCharacterMovementComponent.h">
+      <Filter>Header Files\Engine\ECS\MovementComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header Files\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files\Engine\Objects\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Mappings.h">
+      <Filter>Header Files\Engine\Input</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
