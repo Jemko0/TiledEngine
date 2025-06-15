@@ -7,7 +7,7 @@ Tile::FTile TileLookup::GetTileData(Tile::ETileType type)
 
 	t.render = true;
 	t.solid = true;
-	t.texture = GEngine.GAssetManager->LoadTexture("tileTex", "Assets/Tiles/DebugTile.png");
+	t.texture = LoadTexture(AssetManager::GetAssetPath("Tiles/DebugTile.png").c_str());
 	switch (type)
 	{
 	case Tile::AIR:
