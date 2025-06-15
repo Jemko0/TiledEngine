@@ -5,7 +5,7 @@
 #include "TCharacter.h"
 
 /// <summary>
-/// Controller, handles input mapping binding and can possess characters
+/// Controller, handles input binding and can possess characters
 /// </summary>
 class ENGINE_API Controller : public TPlaceable
 {

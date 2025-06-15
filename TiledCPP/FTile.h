@@ -18,6 +18,6 @@ namespace Tile
 	public:
 		bool render = true;
 		bool solid = true;
-		Texture2D* texture;
+		Texture2D texture;
 	};
 }

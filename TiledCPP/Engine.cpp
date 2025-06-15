@@ -19,7 +19,7 @@ int Engine::Init()
 {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
 
-    InitWindow(m_ScreenWidth, m_ScreenHeight, "Tiled CPP");
+    InitWindow(m_ScreenWidth, m_ScreenHeight, "Tiled");
     SetWindowTitle("Tiled Engine");
     SetTargetFPS(144);
 
@@ -44,9 +44,10 @@ void Engine::EngineLoop()
 
     BeginDrawing();
 
-    DrawText(FTEXT("Camera: X: %f Y: %f", GScene->activeCamera->target.x, GScene->activeCamera->target.y), 32, 32, 24, BLACK);
     GScene->Update(GetFrameTime());
     GScene->Render();
+
+    DrawText(FTEXT("Camera: X: %f Y: %f", GScene->activeCamera->target.x, GScene->activeCamera->target.y), 32, 32, 24, WHITE);
 
     EndDrawing();
 }
