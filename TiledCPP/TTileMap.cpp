@@ -159,6 +159,13 @@ void TTileMap::RenderWithFrameBatching()
     }
 }
 
+DataTypes::IntVector4 TTileMap::GetTileFrame(int x, int y)
+{
+
+    uint8_t top = tiles[x][y]
+    return DataTypes::IntVector4();
+}
+
 void TTileMap::Cleanup()
 {
     for (auto& texturePair : m_TileTextures) {
