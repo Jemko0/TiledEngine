@@ -2,18 +2,10 @@
 
 #include "Macros.h"
 
-#ifdef ENGINE_DLL
-#ifdef _WIN32
+#ifdef BUILDING_ENGINE_DLL
 #define ENGINE_API __declspec(dllexport)
 #else
-#define ENGINE_API __attribute__((visibility("default")))
-#endif
-#else
-#ifdef _WIN32
-#define ENGINE_API
-#else
-#define ENGINE_API
-#endif
+#define ENGINE_API __declspec(dllimport)
 #endif
 
 #define FORWARD_DECLARE(T) class ENGINE_API T

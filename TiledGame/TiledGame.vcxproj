@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b5094c7a-2a4d-4d6c-adc5-5d15e869889a}</ProjectGuid>
-    <RootNamespace>TiledCPP</RootNamespace>
+    <ProjectGuid>{e59fdbbd-5c03-4783-a159-043b20d19bf5}</ProjectGuid>
+    <RootNamespace>TiledGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -40,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -74,7 +74,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);BUILDING_ENGINE_DLL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -102,15 +102,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);BUILDING_ENGINE_DLL</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)include;$(SolutionDir)TiledCPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>raylib.lib;opengl32.lib;gdi32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,56 +130,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AssetManager.cpp" />
-    <ClCompile Include="Controller.cpp" />
-    <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="Mappings.cpp" />
-    <ClCompile Include="TCharacter.cpp" />
-    <ClCompile Include="TCharacterMovementComponent.cpp" />
-    <ClCompile Include="TEntity.cpp" />
-    <ClCompile Include="Input.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="TComponent.cpp" />
-    <ClCompile Include="TileLookup.cpp" />
-    <ClCompile Include="TMovementComponent.cpp" />
-    <ClCompile Include="TObject.cpp" />
-    <ClCompile Include="TObjectBase.cpp" />
-    <ClCompile Include="TPlaceable.cpp" />
-    <ClCompile Include="TScene.cpp" />
-    <ClCompile Include="TSpriteRenderComponent.cpp" />
-    <ClCompile Include="TTileColliderComponent.cpp" />
-    <ClCompile Include="TTileMap.cpp" />
-    <ClCompile Include="TTransformComponent.cpp" />
-    <ClCompile Include="TWorld.cpp" />
+    <ClInclude Include="TiledPlayer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="API.h" />
-    <ClInclude Include="AssetManager.h" />
-    <ClInclude Include="Controller.h" />
-    <ClInclude Include="Macros.h" />
-    <ClInclude Include="Mappings.h" />
-    <ClInclude Include="TCharacter.h" />
-    <ClInclude Include="Common.h" />
-    <ClInclude Include="DataTypes.h" />
-    <ClInclude Include="Engine.h" />
-    <ClInclude Include="TCharacterMovementComponent.h" />
-    <ClInclude Include="TEntity.h" />
-    <ClInclude Include="FTile.h" />
-    <ClInclude Include="Input.h" />
-    <ClInclude Include="IRenderableAsset.h" />
-    <ClInclude Include="ResourceManager.h" />
-    <ClInclude Include="TileLookup.h" />
-    <ClInclude Include="TMovementComponent.h" />
-    <ClInclude Include="TPlaceable.h" />
-    <ClInclude Include="TScene.h" />
-    <ClInclude Include="TComponent.h" />
-    <ClInclude Include="TObject.h" />
-    <ClInclude Include="TObjectBase.h" />
-    <ClInclude Include="TSpriteRendererComponent.h" />
-    <ClInclude Include="TTileColliderComponent.h" />
-    <ClInclude Include="TTileMap.h" />
-    <ClInclude Include="TTransformComponent.h" />
-    <ClInclude Include="TWorld.h" />
+    <ClCompile Include="TiledPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TiledCPP\TiledCPP.vcxproj">
+      <Project>{b5094c7a-2a4d-4d6c-adc5-5d15e869889a}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

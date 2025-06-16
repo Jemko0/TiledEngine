@@ -15,11 +15,6 @@ TScene::~TScene()
     {
         delete activeCamera;
     }
-
-    for (TObject*& o : m_Objects)
-    {
-        o->BeginDestroy();
-    }
 }
 
 const char* TScene::GenerateIdentifier()
@@ -42,17 +37,15 @@ std::vector<TObject*>& TScene::GetObjects()
 	return m_Objects;
 }
 
-bool TScene::RegisterObject(TObject* o)
+bool TScene::RegisterObject(std::unique_ptr<TObject> obj)
 {
-	if (!o)
-	{
-		return false;
-	}
-
-    o->SetScene(*this);
-	m_Objects.push_back(o);
-
-	return true;
+    if (!obj)
+    {
+        return false;
+    }
+    obj->SetScene(*this);
+    m_Objects.push_back(std::move(obj)); // Transfer ownership to the vector
+    return true;
 }
 
 bool TScene::UnregisterObject(TObject* o)
