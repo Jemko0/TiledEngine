@@ -14,7 +14,28 @@ void InputManager::Update()
 
 	float lr = 0;
 	float ud = 0;
+	
+	if (IsKeyDown(KEY_W))
+	{
+		ud = -1;
+	}
 
+	if (IsKeyDown(KEY_S))
+	{
+		ud = 1;
+	}
+
+	if (IsKeyDown(KEY_A))
+	{
+		lr = -1;
+	}
+
+	if (IsKeyDown(KEY_D))
+	{
+		lr = 1;
+		
+	}
+	
 	Camera2D* c = TWorld::Instance().GetScene()->activeCamera;
 
 	if (c)
