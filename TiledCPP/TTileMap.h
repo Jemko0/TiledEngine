@@ -36,6 +36,7 @@ public:
     void Initialize(int w, int h);
 
     void RenderWithFrameBatching();
+    DataTypes::IntVector4 GetTileFrame(int x, int y);
 
     virtual void Cleanup() override;
     virtual void BeginDestroy() override;
