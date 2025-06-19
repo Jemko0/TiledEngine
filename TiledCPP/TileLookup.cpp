@@ -1,7 +1,7 @@
 #include "TileLookup.h"
 #include "Engine.h"
 
-Tile::FTile TileLookup::GetTileData(Tile::ETileType type)
+Tile::FTile TileLookup::GetTileData(Tile::ETileType& type)
 {
 	Tile::FTile t = Tile::FTile();
 

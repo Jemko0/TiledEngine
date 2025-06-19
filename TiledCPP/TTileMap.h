@@ -36,7 +36,8 @@ public:
     void Initialize(int w, int h);
 
     void RenderWithFrameBatching();
-    DataTypes::IntVector4 GetTileFrame(int x, int y);
+    Rectangle GetTileFrame(int x, int y);
+    Rectangle GetFrameFromMask(uint8_t mask);
 
     virtual void Cleanup() override;
     virtual void BeginDestroy() override;
@@ -44,6 +45,7 @@ public:
 
     void LoadTileTexture(Tile::ETileType tileType, const char* texturePath);
     void LoadAllTileTextures();
+    bool IsValidTile(int x, int y);
 
     bool IsSolidTile(int x, int y);
 

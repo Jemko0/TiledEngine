@@ -5,5 +5,5 @@
 class TileLookup
 {
 public:
-	static Tile::FTile GetTileData(Tile::ETileType type);
+	static Tile::FTile GetTileData(Tile::ETileType& type);
 };
